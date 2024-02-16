@@ -1,0 +1,39 @@
+﻿@{
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Price Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <form>
+        <div class="calculator">
+            <label for="hours">Number of Hours Needed:</label>
+            <input type="number" id="hours" min="0">
+            <br>
+            <label for="rate">Hourly Rate:</label>
+            <input type="text" id="rate" value="$25" readonly>
+            <br>
+            <button id="calculateBtn">Calculate Total</button>
+            <br>
+            <label for="total">Total Cost:</label>
+            <input type="text" id="total" readonly>
+        </div>
+    </form>
+    <!-- Links the JavaScript and jquery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="~/js/site.js"></script>
+    @* Privacy.cshtml *@
+    @{
+        ViewBag.Title = "Privacy Page";
+    }
+    @* Link to Privacy Page *@
+    @Html.ActionLink("Go to Index Page", "Index", "Home")
+</body>
+</html>
